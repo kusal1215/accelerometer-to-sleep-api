@@ -1,0 +1,7 @@
+json2html
+requests
+bs4
+faker
+pysocks
+flask
+gunicorn
