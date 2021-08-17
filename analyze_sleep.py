@@ -48,7 +48,7 @@ def readcsv(file):
 
 
 def strtotime(text):
-  return datetime.strptime(text,"%Y-%m-%d %H:%M:%S.%f")
+  return datetime.strptime(text,"%H:%M:%S")
 
 
 def calculate_q_time(csv_file):
