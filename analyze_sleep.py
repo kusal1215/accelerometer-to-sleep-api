@@ -48,8 +48,11 @@ def readcsv(file):
 
 
 def strtotime(text):
-  return datetime.strptime(text,"%H:%M:%S")
-
+  text = text.replace(" PM",'').replace(' AM','')
+  try:
+    return datetime.strptime(text,"%H:%M:%S")
+  except:
+    return datetime.strptime(text,"%m/%d/%Y %H:%M:%S")
 
 def calculate_q_time(csv_file):
    t = [x[0] for x in csv_file]
